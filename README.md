@@ -1,8 +1,8 @@
 # Tugas 6 — Visualisasi Data: Supermarket Sales Dashboard
 
-> **Nama  :** [Nama Mahasiswa]  
-> **NIM   :** [NIM Mahasiswa]  
-> **Kelas :** [Nama Kelas]
+> **Nama  :** [Lalu Rifqi Ramadhan]  
+> **NIM   :** [F1D02310071]  
+> **Kelas :** [Pemrograman Visual D]
 
 ---
 
@@ -73,9 +73,8 @@ dashboard_project/
 ├── data_loader.py     # Pemuat & pemroses data
 ├── README.md          # Dokumentasi ini
 └── screenshots/
-    ├── dashboard_full.png
-    ├── dashboard_charts.png
-    └── dashboard_table.png
+    ├── foto1.png
+    └── foto2.png
 ```
 
 ---
@@ -108,32 +107,11 @@ self.df_all = load_data("path/ke/supermarket_sales.csv")
 
 ### Dashboard Utama (Tab Visualisasi)
 
-![Dashboard Charts](screenshots/dashboard_charts.png)
-
-### Seluruh Tampilan Dashboard
-
-![Dashboard Full](screenshots/dashboard_full.png)
+![Dashboard Charts](screenshots/foto1.png)
 
 ### Tab Data Mentah
 
-![Dashboard Table](screenshots/dashboard_table.png)
+![Dashboard Table](screenshots/foto2.png)
 
----
 
-## Teknologi yang Digunakan
 
-| Library | Versi | Fungsi |
-|---|---|---|
-| PySide6 | 6.x | Framework GUI utama |
-| Matplotlib | 3.x | Rendering chart di dalam PySide6 |
-| Pandas | 2.x | Pengolahan & agregasi data |
-| NumPy | 2.x | Komputasi numerik (garis tren scatter) |
-
----
-
-## Catatan Teknis
-
-- Chart menggunakan backend `Agg` (non-interaktif) yang di-embed lewat `FigureCanvasQTAgg` — chart **tidak membuka window terpisah**.
-- Filter bekerja secara real-time: setiap perubahan filter langsung memperbarui tabel, kartu ringkasan, dan semua chart.
-- Jika file CSV tidak ditemukan, aplikasi otomatis men-generate 200 baris data sintetis yang realistis.
-- UI responsif: semua widget menggunakan `QSizePolicy.Expanding` dan `QSplitter` sehingga tetap rapi saat di-resize.
